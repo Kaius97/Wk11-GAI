@@ -4,7 +4,7 @@ import replicate
 import os
 import time
 
-api = os.getenv("makersuite_api")
+api = os.getenv("MAKERSUITE_API_TOKEN")
 
 palm.configure(api_key=api)
 model = {
