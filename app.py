@@ -4,7 +4,9 @@ import replicate
 import os
 import time
 
-palm.configure(api_key="AIzaSyCCT1K99BJ1JbLwhCE7qOcQ5KOZcPJ9ZZ4")
+api = os.getenv("makersuite_api")
+
+palm.configure(api_key=api)
 model = {
     "model": "models/chat-bison-001",
 }
